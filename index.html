@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>QR Code Generator</title>
-  </head>
-  <body>
-    <main class="wrapper-content">
-      <div class="main-content">
+    <title>Qr Code - Gerador</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="text-tittle">
+                <h1>Gerador de QRCode</h1>
+                <p>Cole a URL desejada: </p>
+            </div>
+            <div class="form-content">
+                <input type="text"  placeholder="Insira a URL" name="" id="inputValue"><br>
+                <button id="btnValue" >Gerar QRcode</button>
+            </div>
+        </div>
+        <div class="right-qr">
+            <div class="imagemqr">
+              <img src="" id="qrCoderImage" alt=""></div>
+        </div>
+    </div>
 
-        <header class="text-tittle">
-
-          <h1>Gerador de QRCode</h1>
-          <p>Cole a URL desejada logo abaixo:</p>
-        </header>
-        <form class="form-content">
-            <input type="text" autofocus placeholder="insira a URL"><br>
-            <button id="btnValue"> Gerador QRCODE</button> 
-        </form>
-      </div>
-      <aside class="right-qr">
-          <img src="assets/16-QR-256x256.png" alt="">
-      </aside>
-    </main>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
